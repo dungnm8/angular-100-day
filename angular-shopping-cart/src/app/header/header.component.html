@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+
+<ul class="breadcrumb">
+
+  <li *ngFor="let menu_items of menu_products">
+    {{ menu_items }}
+  </li>
+</ul>
+<span class="count_product"> {{numer_items}} items in the bag</span>

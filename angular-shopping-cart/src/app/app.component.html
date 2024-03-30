@@ -1,0 +1,13 @@
+<main>
+  <header class="container">
+    <app-header [numer_items]="products.length"></app-header>
+  </header>
+  <section class="container">
+    <app-product-list [products]="products" (onRemoveProduct)="removeProduct($event)"></app-product-list>
+  </section>
+
+  <section class="container">
+    <app-promo-code [numberProduct]="numberProduct" [subTotal]="subTotal"></app-promo-code>
+  </section>
+</main>
+<router-outlet/>
